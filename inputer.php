@@ -1,13 +1,14 @@
 <?php
-
 defined('IN_DESTOON') or exit('Access Denied');
 if ($DT_BOT) {
 	dhttp(403);
 }
-require DT_ROOT . '/include/post.func.php';
+require_once DT_ROOT . '/include/post.func.php';
 require DT_ROOT . '/module/member/member.class.php';
 
 $login = new member;
+
+// $authData =
 
 // login
 $username = 'admin';
